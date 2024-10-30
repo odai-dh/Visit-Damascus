@@ -1,0 +1,126 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Oxanium", sans-serif;
+
+}
+.title{
+    background-color: antiquewhite;
+    margin: 0ox;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: max-content;
+}
+.underTitle{
+    background-color: rgba(222, 222, 222, 0.5);
+    margin: 0ox;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* text-align: center; */
+    align-items: center;
+    background-image: url(./images/background1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
+    border-radius: 10px 10px 0px 0px;
+    background-position: center;
+    /* /* transition: filter 0.3s ease; */
+    /* filter: grayscale(100%); */ 
+    /* transition: opacity 0.3s ease; */
+    /* transition: background-position 0.3s ease; */
+}
+.hero:hover{
+    filter: blur(1px);
+    /* filter: grayscale(0%); */
+    /* opacity: 0.7; */
+    /* background-position: center right;  */
+}
+img {
+    width: 100px;
+    height: 100px;
+    
+}
+.activities{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(198, 252, 214, 0.5);
+    padding-bottom: 40px;
+    
+}
+.places{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.img{
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    
+}
+.img:hover{
+    transform: scale(2.1); 
+}
+
+.place{
+    width: 250px;
+    margin: 4px;
+    background-color: rgba(192, 255, 234, 0.8);
+    height: auto; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    white-space: normal;
+    border: 2px solid rgba(84, 183, 170, 0.367);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px black;
+}
+.guide{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 200px; */
+    width: 400px; /* Set your preferred width */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Creates a subtle shadow for depth */
+    background-color: #fff;
+    text-align: center;
+    margin: 20px auto;
+    background: #ddebf8;
+    color: #2b2839;
+    border-bottom: 6px solid #d8cefe;
+}
+.guide img {
+    width: 80px; /* Adjusts image size within the card */
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+
+}
+.guide img:hover{
+    filter: grayscale(0%);
+}
